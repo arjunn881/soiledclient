@@ -12,7 +12,7 @@ const NewsletterSignup = () => {
 const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    const res = await axios.post('http://localhost:5000/api/newsletter', { email }, {
+    const res = await axios.post('https://soiledbackend.onrender.com/api/newsletter', { email }, {
       headers: { 'Content-Type': 'application/json' }
     });
 

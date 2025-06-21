@@ -4,6 +4,8 @@ import axios from 'axios';
 import FormInput from '../components/FormInput';
 import '../styles/Contact.css';
 
+
+
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
 
@@ -15,7 +17,7 @@ const Contact = () => {
 const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    const res = await axios.post('http://localhost:5000/api/contact', form, {
+    const res = await axios.post('https://soiledbackend.onrender.com/api/contact', form, {
       headers: { 'Content-Type': 'application/json' }
     });
 

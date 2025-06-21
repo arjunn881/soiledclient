@@ -22,7 +22,7 @@ const BookingForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/bookings', form, {
+      const res = await axios.post('https://soiledbackend.onrender.com//api/bookings', form, {
         headers: { 'Content-Type': 'application/json' }
       });
       alert(res.data.message || 'Booking request sent!');
