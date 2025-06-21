@@ -1,0 +1,248 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.youtube-bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.youtube-bg-wrapper iframe {
+  width: 100vw;
+  height: 100vh;
+  /* object-fit: cover; */
+  pointer-events: none;
+  border: none;
+}
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  /* background: rgba(0, 0, 0, 0.5); */ /* Keep this if needed for readability */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: white;
+  min-height: 60vh; /* Adjust height target for hero section */
+}
+.hero-overlay h1 {
+  font-size: 4rem;
+  color: #bb86fc;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.4rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+/* CTA */
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* EVENTS */
+.events-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.event-card {
+  background: #1a1a1a;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  min-width: 220px;
+  max-width: 300px;
+  flex: 1;
+}
+
+.event-date {
+  color: #bb86fc;
+  font-weight: bold;
+}
+
+.event-venue,
+.event-type {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* YOUTUBE */
+.video-section {
+  text-align: center;
+  padding: 1rem;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 800px;
+  margin: auto;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* SPOTIFY */
+.highlight-section {
+  text-align: center;
+  padding: 1rem;
+}
+
+.spotify-embed {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* SERVICES */
+.services-teaser {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h3 {
+  color: #bb86fc;
+}
+
+.card p {
+  color: #ccc;
+}
+
+/* CALLOUT */
+.callout {
+  text-align: center;
+  padding: 3rem 1rem;
+  border-top: 1px solid #222;
+}
+
+.callout p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  color: #bbb;
+}
+
+/* ===================== */
+/* RESPONSIVE BREAKPOINTS */
+/* ===================== */
+
+/* Small phones */
+@media (max-width: 480px) {
+  .hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+
+  .event-card {
+    width: 100%;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .callout {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-overlay {
+    min-height: 50vh;
+    padding: 1.5rem 1rem;
+  }
+}
+
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 3rem;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .cta-buttons .btn {
+    min-width: 140px;
+  }
+
+  .event-card {
+    max-width: 100%;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+  .hero-overlay h1 {
+    font-size: 4.5rem;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+  }
+}

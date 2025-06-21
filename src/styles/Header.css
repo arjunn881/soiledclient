@@ -1,0 +1,155 @@
+.header {
+  background: #111;
+  border-bottom: 1px solid #222;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #bb86fc;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-list a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #bb86fc;
+}
+
+/* Mobile styles */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #111;
+    display: none;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .nav-list.open {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+
+  .nav-list li {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Theme toggle button */
+.theme-btn {
+  background: none;
+  border: none;
+  color: #bb86fc;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+  background-color: #f2f2f2;
+  color: #111;
+}
+
+body.light-mode .header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+body.light-mode .nav-list a {
+  color: #111;
+}
+
+body.light-mode .nav-list a:hover {
+  color: #6200ee;
+}
+
+body.light-mode .event-card,
+body.light-mode .card {
+  background: #fdfdfd;
+  border-color: #ccc;
+  color: #222;
+}
+
+body.light-mode .callout {
+  border-top: 1px solid #ccc;
+  background: #f9f9f9;
+}
+
+body.light-mode .tagline {
+  color: #444;
+}
+/* Light mode mobile nav */
+body.light-mode .nav-list {
+  background: #fff;
+}
+
+body.light-mode .menu-toggle .bar {
+  background: #111;
+}
+.nav-list {
+  transition: background-color 0.3s ease;
+}
+.menu-toggle .bar {
+  transition: background-color 0.3s ease;
+}

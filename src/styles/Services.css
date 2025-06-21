@@ -1,0 +1,16 @@
+.services-page {
+  padding: 1rem;
+  height: 100vh;
+}
+
+.service-block {
+  margin-bottom: 2rem;
+}
+
+.service-block h2 {
+  color: #bb86fc;
+}
+
+.service-block p {
+  max-width: 700px;
+}

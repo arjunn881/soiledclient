@@ -1,0 +1,154 @@
+.newsletter {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #111;
+  border-top: 1px solid #222;
+}
+
+.newsletter h2 {
+  color: #bb86fc;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.newsletter input {
+  padding: 0.6rem;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 4px;
+  min-width: 240px;
+}
+
+.newsletter .btn {
+  padding: 0.6rem 1.2rem;
+  background: #bb86fc;
+  border: none;
+  border-radius: 4px;
+  color: #111;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.newsletter .btn:hover {
+  background: #9b6be9;
+}
+
+.newsletter .thanks {
+  color: #66ff66;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input,
+  .newsletter .btn {
+    width: 100%;
+  }
+}
+/* 
+/* LIGHT MODE */
+body.light-mode .newsletter {
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+
+body.light-mode .newsletter h2 {
+  color: #bb86fc;
+}
+
+body.light-mode .newsletter p {
+  color: #444;
+}
+
+body.light-mode .newsletter input {
+  background: #fff;
+  color: #111;
+  border: 1px solid #ccc;
+  
+}
+
+body.light-mode .newsletter .btn {
+  background: #bb86fc;
+  color: #fff;
+}
+
+body.light-mode .newsletter .btn:hover {
+  background: #4b00c2;
+}
+
+body.light-mode .newsletter .thanks {
+  color: #388e3c;
+} 
+
+
+.newsletter, .newsletter input, .newsletter .btn {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+
+/* .newsletter {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #111;
+  border-top: 1px solid #222;
+}
+
+.newsletter h2 {
+  color: #bb86fc;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.newsletter input {
+  padding: 0.6rem;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 4px;
+  min-width: 240px;
+}
+
+.newsletter .thanks {
+  color: #66ff66;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+@media (max-width: 500px) {
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input,
+  .newsletter .btn {
+    width: 100%;
+  }
+} */

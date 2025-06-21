@@ -1,0 +1,87 @@
+.about-page {
+    padding: 1rem;
+  /* max-width: 900px;
+  margin: 0 auto;
+  height: 100%;
+  text-align: left; */
+}
+
+.about-page h1 {
+  /* color: #bb86fc; */
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.story-block {
+  margin-bottom: 2rem;
+}
+
+.story-block h2 {
+  font-size: 1.3rem;
+  color: #bb86fc;
+  margin-bottom: 0.5rem;
+}
+
+.story-block p {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 1rem;
+  max-width: 700px;
+}
+
+/* Quote block */
+.quote {
+  font-style: italic;
+  color: #999;
+  border-left: 3px solid #bb86fc;
+  padding-left: 1rem;
+  margin: 2rem 0;
+  max-width: 700px;
+}
+
+/* CTA buttons at bottom */
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Light mode overrides */
+body.light-mode .about-page {
+  /* background-color: #f9f9f9; */
+  color: #111;
+}
+
+body.light-mode .about-page h1 {
+  
+   color: #111;
+}
+
+body.light-mode .story-block h2 {
+  color: #bb86fc;
+}
+
+body.light-mode .story-block p {
+  color: #444;
+}
+
+body.light-mode .quote {
+  color: #666;
+  border-left-color: #bb86fc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .about-page {
+    padding: 1rem;
+  }
+
+  .story-block h2 {
+    font-size: 1.1rem;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}

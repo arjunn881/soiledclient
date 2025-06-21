@@ -1,0 +1,71 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.6rem;
+  background: #1a1a1a;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #bb86fc;
+}
+
+/* LIGHT MODE OVERRIDES */
+body.light-mode .form-group label {
+  color: #333;
+}
+
+body.light-mode .form-group input,
+body.light-mode .form-group textarea {
+  background: #fff;
+  color: #111;
+  border: 1px solid #ccc;
+}
+
+body.light-mode .form-group input::placeholder,
+body.light-mode .form-group textarea::placeholder {
+  color: #999;
+}
+
+
+
+
+/* .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.6rem;
+  background: #1a1a1a;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #bb86fc;
+} */
